@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country quiz</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  
+
+    <div class="mainC">
+
+    <div class="container">
+    <div class="insideContainer">
+        <div class="dBox i">
+            <h3>Total:
+                <% if(locals.total) {%>
+                    <%=total %>
+                    <% } %>
+
+            </h3>
+        </div>
+        <!-- <center> -->
+        <div class="countrName i center">
+            <% if(locals.data) {%>
+           <h2> <%=data.country %></h2>
+            <% } %>
+        </div>
+      
+        <div class="i center">
+            <form action="/submit" method="post">
+                    <input class="i" type="text" name="capital" id="capital" placeholder="Type your answer" autofocus autocomplete="off">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    <!-- </center> -->
+    
+    </div>
+    </div>
+</div>
+
+    <script src="index.js">
+        let result="<%=locals.result%>";
+        console.log(result);
+          if(result) {
+       alert(`Duck off ${total}`);
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+body{
+    background-image: url("./questionMarkImage.jpeg");
+    height: 100vh;
+}
+.mainC
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+.insideContainer{
+    display: flex;
+    flex-direction: column;
+}
+.i{
+    flex-basis: 50px;
+    width: 600px;
+}
+.center{
+    text-align: center;
+}
+
+button{
+    margin:20px 0 ;
+}
+/* .container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:200px;
+    width:200px; 
+    flex-direction: column;
+    /* background-color: purp; */
+/* } */ */
+
+.countrName{
+    text-align: center;
+}
